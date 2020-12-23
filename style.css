@@ -94,6 +94,9 @@ h6,
 .entry-content h6 {
 	font-family: 'Ovo', serif;
 }
+.site-title {
+	font-size: 45px;
+}
 .site-description {
 	font-style: italic;
 }

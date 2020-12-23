@@ -16,7 +16,37 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 :root {
+	/* Base Theme Colors */
+	/* Note: Some duplicates are because of theme switcher */
+	--shadow-color: #282a36;
+
+	/* WordPress Theme Colors (uses base) */
+	--dark-shadow-color: var(--shadow-color);
 	--code-block-color: #f5f5f5;
+}
+body:not(.original) {
+	/* Base Theme Colors */
+	--background-color: #383a59;
+	--text-color: #f2f2f2;
+	--highlight-color--1: #bd93f9;
+	--highlight-color--2: #ff79c6;
+	--highlight-color--3: #50fa7b;
+	--highlight-color--4: #ffb86c;
+	--highlight-color--5: #8be9fd;
+	--shadow-color-light: #bcc2cd;
+	--shadow-color: #282a36;
+
+	/* WordPress Theme Colors (uses base) */
+	--meta-text-color: var(--highlight-color--1);
+	--header-color: var(--highlight-color--3);
+	--highlight-color: var(--highlight-color--2);
+	--highlight-color-alt: var(--highlight-color--5);
+	--border-color: var(--highlight-color--4);
+	--button-color: var(--highlight-color--1);
+	--dark-shadow-color: var(--shadow-color);
+	--code-block-color: #fdf6e3;
+
+	background-color: var(--background-color);
 }
 
 body,
@@ -25,7 +55,6 @@ body,
 .entry-meta,
 .entry-footer,
 .page-content,
-.site-description,
 .site-info,
 .main-navigation,
 .comments-area,
@@ -54,6 +83,9 @@ h6,
 .site-posted-on strong,
 .site-posted-on time,
 .site-title,
+.site-description,
+.comments-title,
+.comment-reply-title,
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -61,31 +93,6 @@ h6,
 .entry-content h5,
 .entry-content h6 {
 	font-family: 'Ovo', serif;
-}
-
-body:not(.original) {
-	/* Base Theme Colors */
-	--background-color: #383a59;
-	--text-color: #f2f2f2;
-	--highlight-color--1: #bd93f9;
-	--highlight-color--2: #ff79c6;
-	--highlight-color--3: #50fa7b;
-	--highlight-color--4: #ffb86c;
-	--highlight-color--5: #8be9fd;
-	--shadow-color-light: #bcc2cd;
-	--shadow-color: #282a36;
-
-	/* WordPress Theme Colors (uses base) */
-	--meta-text-color: var(--highlight-color--1);
-	--header-color: var(--highlight-color--3);
-	--highlight-color: var(--highlight-color--2);
-	--highlight-color-alt: var(--highlight-color--5);
-	--border-color: var(--highlight-color--4);
-	--button-color: var(--highlight-color--1);
-	--dark-shadow-color: var(--shadow-color);
-	--code-block-color: #fdf6e3;
-
-	background-color: var(--background-color);
 }
 .site-description {
 	font-style: italic;
@@ -132,7 +139,10 @@ body:not(.original),
 :not(.original) .site-title a {
 	color: var(--header-color) !important;
 }
-:not(.original) .site-description,
+:not(.original) .site-description {
+	color: var(--highlight-color--1);
+	font-size: 20px;
+}
 :not(.original) .social-navigation li a,
 :not(.original) .site-header .menu-toggle {
 	color: var(--text-color) !important;
@@ -156,6 +166,9 @@ body:not(.original),
 :not(.original) .main-navigation a:visited,
 :not(.original) .site-info {
 	color: var(--text-color);
+}
+:not(.original) .main-navigation {
+	font-weight: 400;
 }
 :not(.original) .main-navigation li.current-menu-item > a,
 :not(.original) .main-navigation li.current_page_item > a {

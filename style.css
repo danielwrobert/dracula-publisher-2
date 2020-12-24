@@ -207,7 +207,7 @@ a:active {
 .widget_wpcom_social_media_icons_widget li a:focus,
 .jetpack-social-navigation li a:active,
 .widget_wpcom_social_media_icons_widget li a:active {
-	color: var(--highlight-color--4);
+	color: var(--highlight-color--5);
 }
 #jp-relatedposts
 	.jp-relatedposts-items

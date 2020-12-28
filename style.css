@@ -138,9 +138,8 @@ h6,
 	color: var(--highlight-color--1);
 	font-size: 20px;
 }
-.social-navigation li a,
 .site-header .menu-toggle {
-	color: var(--text-color) !important;
+	color: var(--hightlight-color--4);
 }
 a,
 a:visited,
@@ -200,7 +199,9 @@ a:active {
 	color: var(--header-color);
 }
 .jetpack-social-navigation li a,
-.widget_wpcom_social_media_icons_widget li a,
+.widget_wpcom_social_media_icons_widget li a {
+	color: var(--dark-shadow-color);
+}
 .jetpack-social-navigation li a:hover,
 .widget_wpcom_social_media_icons_widget li a:hover,
 .jetpack-social-navigation li a:focus,
@@ -220,8 +221,7 @@ a:active {
 	opacity: 1;
 }
 .button,
-.more-link,
-a.more-link,
+.button:visited,
 button:not(.menu-toggle),
 input[type='button'],
 input[type='reset'],
@@ -231,8 +231,10 @@ input[type='submit'],
 	color: var(--dark-shadow-color);
 }
 .more-link,
+.more-link:visited,
 a.more-link {
 	background: var(--highlight-color--2);
+	color: var(--dark-shadow-color);
 }
 .post-navigation {
 	margin-top: 1.75em;
@@ -327,4 +329,8 @@ pre {
 	background-color: var(--dark-shadow-color);
 	margin-bottom: 0;
 	padding: 1.75em 0;
+}
+.toc {
+	padding: 0.15em 0.75em;
+    background-color: var(--dark-shadow-color);
 }

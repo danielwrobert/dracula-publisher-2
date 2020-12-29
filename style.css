@@ -228,12 +228,14 @@ input[type='submit'],
 	color: var(--dark-shadow-color);
 }
 .menu-toggle {
+	border-color: var(--highlight-color--4);
 	color: var(--highlight-color--4);
 	transition: background 200ms ease-in-out, border-color 200ms ease-in-out, box-shadow 200ms ease-in-out, color 200ms ease-in-out;
 }
 .menu-toggle:hover,
 .menu-toggle:focus,
 .menu-toggle:active {
+	border-color: var(--shadow-color-light);
 	color: var(--shadow-color-light);
 }
 .more-link,

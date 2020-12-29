@@ -138,9 +138,6 @@ h6,
 	color: var(--highlight-color--1);
 	font-size: 20px;
 }
-.site-header .menu-toggle {
-	color: var(--highlight-color--4);
-}
 a,
 a:visited,
 .comment .comment-meta .comment-metadata a:hover,
@@ -200,7 +197,7 @@ a:active {
 }
 .jetpack-social-navigation li a,
 .widget_wpcom_social_media_icons_widget li a {
-	color: var(--dark-shadow-color);
+	color: var(--text-color);
 }
 .jetpack-social-navigation li a:hover,
 .widget_wpcom_social_media_icons_widget li a:hover,
@@ -229,6 +226,16 @@ input[type='submit'],
 #content #infinite-handle span button {
 	background: var(--button-color);
 	color: var(--dark-shadow-color);
+}
+.menu-toggle {
+	border-color: var(--highlight-color--4);
+	color: var(--highlight-color--4);
+}
+.menu-toggle:hover,
+.menu-toggle:focus,
+.menu-toggle:active {
+	border-color: var(--shadow-color-light);
+	color: var(--shadow-color-light);
 }
 .more-link,
 .more-link:visited,

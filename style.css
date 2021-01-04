@@ -338,7 +338,3 @@ pre {
 	margin-bottom: 0;
 	padding: 1.75em 0;
 }
-.toc {
-	padding: 0.15em 0.75em;
-    background-color: var(--dark-shadow-color);
-}

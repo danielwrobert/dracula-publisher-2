@@ -250,6 +250,21 @@ a.more-link {
 	border-top: solid 1px #ddd;
 	border-bottom: none;
 }
+.post-navigation .nav-links {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.post-navigation .nav-links:before,
+.post-navigation .nav-links:after {
+  content: none;
+}
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+    flex: 0 1 42%;
+    float: none;
+}
 .post-navigation .nav-links a {
 	display: inline-block;
     box-sizing: content-box;

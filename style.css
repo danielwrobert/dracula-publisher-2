@@ -321,14 +321,10 @@ textarea:focus,
 .comment-form textarea:focus {
 	border-color: var(--border-color);
 }
-p > code,
-p > kbd,
-p > tt,
-p > var,
-li > code,
-li > kbd,
-li > tt,
-li > var {
+code,
+kbd,
+tt,
+var {
 	background: var(--dark-shadow-color);
 }
 pre {

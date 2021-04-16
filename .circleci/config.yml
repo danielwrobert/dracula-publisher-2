@@ -15,4 +15,4 @@ jobs:
       - checkout
       - run:
           name: Send Via SFTP
-          command: lftp sftp://USERNAME:PASSWORD@sftp.pressable.com -e "mirror -v -R --exclude .git/ --exclude .circleci/ ./ ./wp-content/themes/dracula-publisher-2; quit"
+          command: lftp sftp://USERNAME:PASSWORD@sftp.pressable.com -e "mirror -v -R --exclude .git/ --exclude .circleci/ ./ ./wp-content/themes/; quit"

@@ -172,7 +172,10 @@ a:visited,
 }
 a:hover,
 a:focus,
-a:active {
+a:active,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active {
 	color: var(--highlight-color);
 }
 .post-tags li a,

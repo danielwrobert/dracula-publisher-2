@@ -25,6 +25,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	--highlight-color--4: #ffb86c;
 	--highlight-color--5: #8be9fd;
 	--shadow-color-light: #bcc2cd;
+	--shadow-color-mid: #888888;
 	--shadow-color: #282a36;
 
 	/* WordPress Theme Colors (uses base) */
@@ -200,7 +201,7 @@ a:active,
 }
 .jetpack-social-navigation li a,
 .widget_wpcom_social_media_icons_widget li a {
-	color: var(--text-color);
+	color: var(--shadow-color-mid);
 }
 .jetpack-social-navigation li a:hover,
 .widget_wpcom_social_media_icons_widget li a:hover,
@@ -244,7 +245,7 @@ input[type='submit'],
 .more-link,
 .more-link:visited,
 a.more-link {
-	background: var(--highlight-color--2);
+	background: var(--highlight-color--1);
 	color: var(--dark-shadow-color);
 }
 .post-navigation {
@@ -286,7 +287,7 @@ a.more-link {
 .post-navigation .nav-links a:visited,
 .posts-navigation .nav-links a,
 .posts-navigation .nav-links a:visited {
-	background: var(--highlight-color--1);
+	background: var(--highlight-color--2);
 	color: var(--dark-shadow-color);
 }
 .button:hover,
